@@ -1,0 +1,1 @@
+Backend desenvolvido com Node.js e Express, estruturado como uma REST API para gerenciamento de tarefas (To-Do, Kanban e Relatórios). Inclui autenticação JWT, integração com MongoDB (via Mongoose) e rotas protegidas. O projeto segue boas práticas de organização e está preparado para integração com o frontend Angular.
