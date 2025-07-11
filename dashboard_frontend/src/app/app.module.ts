@@ -13,11 +13,19 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { TaskTableComponent } from './task-table/task-table.component';
+import { LoginComponent } from './login/login.component';
+import { MatTableModule } from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
+    DashboardComponent,
+    LoginComponent,
+    TaskTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +38,9 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
