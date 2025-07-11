@@ -17,8 +17,9 @@ export class TaskTableComponent implements OnInit {
   }
 
   loadTasks(): void {
-    this.http.get<any[]>('http://localhost:3000/tasks').subscribe(
+    this.http.get<any[]>('http://localhost:3000/api/tasks').subscribe(
       (data) => {
+        console.log('dados recebidos:', data);
         this.dataSource = data;
       },
       (error) => {

@@ -1,4 +1,4 @@
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" *ngIf="dataSource.length > 0">
 
   <!-- Coluna Título -->
   <ng-container matColumnDef="title">
@@ -36,3 +36,7 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+
+<div *ngIf="dataSource.length === 0">
+  Nenhuma tarefa encontrada.
+</div>
